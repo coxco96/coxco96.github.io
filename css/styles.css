@@ -1,0 +1,248 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+/* COLOR PALETTE:
+#E27D60 dark red/orange
+#85CCCA light blue
+#E8A87C light orange
+#C38D9E purple
+#41B3A3 teal */
+
+
+/* OR
+pastel neon:
+#FF69EB dark pink
+#FF86C8 lighter pink
+#FFA3A5 peach
+#FFBF81 light orange
+#FFBC5E yellow
+
+RETRO COLOR PALETTE:
+
+BROWN: #6F5643
+ORANGE: #CC6B49
+YELLOW: #D2A24C
+CREAM: #ECE6C2
+BLUE/TEAL: #73BDA8
+
+COLORS I LIKE:
+LIGHT PURPLE: #cdb4db
+MORE MATURE PURPLEISH: #b5838d (NAVBAR)
+CREAM: #ECE6C2 (H1)
+
+
+
+
+
+*/
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar {
+  
+  background-color:#24200d;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  color: #ECE6C2;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #b5838d
+}
+
+.navbar-brand {
+  color: #ECE6C2
+}
+
+.navbar-brand:hover {
+  color: #b5838d
+}
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: box-shadow .15s ease-in-out;
+  color: #ECE6C2
+}
+
+.card-title:hover {
+  color: #b5838d
+}
+
+#span1:hover {
+  color: #b5838d
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #ECE6C2;
+  font-size: 4rem;
+}
+
+h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #ECE6C2;
+  font-size: 2rem;
+  background-color: (255,188,94);
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.5 rem
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 20rem
+}
+
+
+
+
+/* header {
+  padding: 154px 0 100px;
+  background-color: #cf4470;
+} */
+
+
+.view {
+  width: 100%;
+  padding: 154px 0 100px;
+}
+
+body {
+  /* apply custom rules to the body here */
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  background-color: #b5838d
+}
+
+
+a {
+  color: black
+}
+
+a:hover {
+  color: #b5838d
+}
+
+
+
+/* media query when the media is wider than 992px */
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0
+}
+
+dt {
+    font-weight: 700;
+    color: #ECE6C2;
+    text-decoration: underline;
+}
+
+dd {
+    margin-bottom: .5rem;
+    margin-left: 0;
+    color: #ECE6C2;
+}
+
+.lead {
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  color: #ECE6C2
+}
+
+
+
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: rgb(176, 30, 30);
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #79869a;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+
+
+
+
+.contact-icon {
+  width: 20px;
+  float: left;
+  color: white;
+  margin-right: 5px;
+}
+
+.logo i {
+  font-size: 1.4rem;
+}
+
+
+.btn-primary {
+  background: var(--bs-primary)
+}
