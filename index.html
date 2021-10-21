@@ -65,8 +65,9 @@
 
   <!-- Welcome Section -->
   <!-- <header> -->
+  <!-- Background image was 22 MB. Let's use PhotoShop to reduce the image to < 1 MB. -->
   <header
-    style="background-image: url('images/vintage-desk-concept-with-copyspace.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    style="background-image: url('images/vintage-desk-concept-small.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <div class="container text-center"></div>
 
     <!-- I added mt-6 to the boostrap.min.css file in order to get the spacing I wanted. mt-6 is 6rem -->
@@ -108,7 +109,7 @@
 
         <div class="col-lg-6 col-sm-6 col-xs-12 portfolio-item">
           <div class="card h-100">
-            <a href="https://coxco96.github.io/kentucky-opioids/"><img class="card-img-top"
+            <a href="#" data-bs-toggle="modal" data-bs-target="#kyOpioid"><img class="card-img-top"
                 src="images/prescriptionbottles.jpg" alt="Lots of empty prescription bottles" /></a>
             <div class="card-body">
               <h4 class="card-title">
@@ -120,6 +121,25 @@
                   RStudio</b> in order to access the data from an API to create this map. I made this map using
                 <b>Leaflet</b> with <b>Javascript</b>.
               </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for above card. -->
+        <div class="modal fade" id="kyOpioid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Preview KENTUCKY OPIOIDS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="images/preview-kyo.jpg" class="mw-100" alt="Preview of map.">
+                <h4>Visit <a href="#">map</a>.</h4>
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div> -->
             </div>
           </div>
         </div>

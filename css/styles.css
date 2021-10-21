@@ -103,6 +103,12 @@ h1 {
   font-size: 4rem;
 }
 
+/* Consider adding drop shadows on header titles */
+
+header h1, header h2 {
+  text-shadow: 0 0 2px #212529, 0 0 4px #212529;;
+}
+
 h2, h3 {
   font-family: 'Oswald', sans-serif;
   color: #ECE6C2;
