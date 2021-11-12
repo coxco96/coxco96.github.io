@@ -115,7 +115,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <img src="us-breweries/na_breweries_8000.png" class="mw-100" alt="Preview of map.">
+                <img src="us-breweries/na_breweries_8000.png" style="margin-bottom: 10px;" class="mw-100" alt="Preview of map.">
                 <h4><a href="us-breweries/na_breweries_8000.png" target="_blank" rel="noopener noreferrer">Open fullscreen</a>.</h4>
               </div>
               <div class="modal-footer">
@@ -155,8 +155,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <img src="images/preview-kyo.jpg" class="mw-100" alt="Preview of map.">
-                <h4>Visit <a href="https://coxco96.github.io/kentucky-opioids/" target="_blank" rel="noopener noreferrer">map</a>.</h4>
+                <img src="images/kyopioids-screenshot.png" class="mw-100" style="margin-bottom: 10px;" alt="Preview of map.">
+                <h4>Visit <a href="https://coxco96.github.io/kentucky-opioids/" target="_blank" rel="noopener noreferrer">interactive map</a>.</h4>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -198,8 +198,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <img src="images/preview-kyo.jpg" class="mw-100" alt="Preview of map.">
-                <h4>Visit <a href="https://coxco96.github.io/us-energy-sources/index.html" target="_blank" rel="noopener noreferrer">map</a>.</h4>
+                <img src="images/powerplant-screenshot.png" class="mw-100" style="margin-bottom: 10px;" alt="Preview of map.">
+                <h4>Visit <a href="https://coxco96.github.io/us-energy-sources/index.html" target="_blank" rel="noopener noreferrer">interactive map</a>.</h4>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -217,7 +217,7 @@
               src="images/simone-hutsch-CQphR2GPlrs-unsplash.jpg" alt="Three tall, bright colored buildings"/></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://coxco96.github.io/county-rent/index.html">U.S. Rent Prices by County</a>
+                <a href="https://coxco96.github.io/county-rent/index.html" target="_blank" rel="noopener noreferrer">U.S. Rent Prices by County</a>
               </h4>
               <p class="card-text">
                 This <b>interactive map</b> shows average rent price by county in the U.S. I used the following packages
@@ -234,12 +234,12 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Preview PATTERNS OF U.S. ENERGY PRODUCTION</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Preview U.S. Rent Prices by County</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="images/preview-kyo.jpg" class="mw-100" alt="Preview of map.">
-                  <h4>Visit <a href="https://coxco96.github.io/us-energy-sources/index.html" target="_blank" rel="noopener noreferrer">map</a>.</h4>
+                  <img src="images/countyrent_screenshot.png" style="margin-bottom: 10px;" class="mw-100" alt="Preview of map.">
+                  <h4>Visit <a href="https://coxco96.github.io/county-rent/index.html" target="_blank" rel="noopener noreferrer">interactive map</a>.</h4>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -253,24 +253,38 @@
 
         <div class="row">
 
-          <!-- Don't make modal. I want to take this sample off. -->
+          
 
           <div class="col-lg-6 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a href="https://coxco96.github.io/covid-vax-map/"target="_blank" rel="noopener noreferrer"><img class="card-img-top"
-                  src="images/fusion-medical-animation-rnr8D3FNUNY-unsplash.jpg"
-                  alt="Needle is being inserted in small covid vaccine bottle" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#unemploymentRates"><img class="card-img-top"
+              src="images/unemployment-image.jpg" alt="Wallet with $5 bill folded over" /></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="https://coxco96.github.io/covid-vax-map/">Pre-Pandemic Vaccine Confidence vs. Covid
-                    Vaccination Rates</a>
+                  <a href="https://coxco96.github.io/unemployment-rates/index.html">2001-2015 U.S. Unemployment Rates by County</a>
                 </h4>
                 <p class="card-text">
-                  This map was created using <b>Mapbox</b>. I worked with two different datasets and used a <b>3-D
-                    interactive visualization</b> for one variable and color classification for the other. This map
-                  shows vaccine confidence as assessed by country prior to the Covid-19 pandemic, and it shows Covid-19
-                  vaccinnation rates at the time of the map's creation (June 2021)
+                  This map visualizes U.S. unemployment rates from 2001-2015 by giving the user a <b>UI slider bar</b>, providing contrast between years. This especially highlights the <b>2008 recession</b> and its economical impact.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for US Unemployment Rates map -->
+          <div class="modal fade" id="unemploymentRates" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Preview U.S. Unemployment Rates</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/unemploymentgif.gif" class="mw-100" alt="Preview of map.">
+                  <h4>Visit <a href="https://coxco96.github.io/unemployment-rates/index.html" target="_blank" rel="noopener noreferrer">interactive map</a>.</h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
@@ -297,7 +311,7 @@
             </div>
           </div>
 
-           <!-- Modal for U.S. Rent Prices by County card. -->
+           <!-- Modal for denver poi card. -->
            <div class="modal fade" id="poiDenver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -306,8 +320,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="images/preview-kyo.jpg" class="mw-100" alt="Preview of map.">
-                  <h4>Visit <a href="https://coxco96.github.io/denver-places-of-interest/index.html" target="_blank" rel="noopener noreferrer">map</a>.</h4>
+                  <img src="images/denverpoi-screenshot.png" style="margin-bottom: 10px;" class="mw-100" alt="Preview of map.">
+                  <h4>Visit <a href="https://coxco96.github.io/denver-places-of-interest/index.html" target="_blank" rel="noopener noreferrer">interactive map</a>.</h4>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
