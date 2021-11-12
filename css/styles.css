@@ -138,7 +138,7 @@ p {
 
 body {
   /* apply custom rules to the body here */
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Owald', 'Lato', Arial, Helvetica, sans-serif;
   background-color: #b5838d
 }
 
@@ -160,6 +160,27 @@ a:hover {
   }
 }
 
+@media (max-width: 330px) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 330px) {
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
 .portfolio-item {
   margin-bottom: 30px;
 }
@@ -172,7 +193,8 @@ dl,
 ol,
 ul {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 ol ol,
@@ -186,12 +208,15 @@ dt {
     font-weight: 700;
     color: #ECE6C2;
     text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
 }
 
 dd {
     margin-bottom: .5rem;
     margin-left: 0;
     color: #ECE6C2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
 .lead {
