@@ -109,7 +109,10 @@ header h1, header h2 {
 body {
   /* apply custom rules to the body here */
   font-family: 'Owald', 'Lato', Arial, Helvetica, sans-serif;
-  background-color: #b5838d
+}
+
+footer {
+  background-color: #e7e7e7
 }
 
 
@@ -174,6 +177,7 @@ ul {
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: 'Oswald', sans-serif;
+    color: #24200d;
 }
 
 ol ol,
@@ -185,7 +189,7 @@ ul ul {
 
 dt {
     font-weight: 700;
-    color: #ECE6C2;
+    color: #24200d;
     text-decoration: underline;
     font-family: 'Oswald', sans-serif;
 }
@@ -193,7 +197,7 @@ dt {
 dd {
     margin-bottom: .5rem;
     margin-left: 0;
-    color: #ECE6C2;
+    color: #24200d;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
@@ -202,7 +206,7 @@ dd {
   font-size: 1.3rem;
   font-weight: 300;
   font-family: 'Oswald', sans-serif;
-  color: #ECE6C2
+  color: #24200d;
 }
 
 
