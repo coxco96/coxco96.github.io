@@ -78,10 +78,15 @@ h2 {
 
 p {
   font-family: 'Oswald', sans-serif;
-  color: #000;
+  color: #24200d;
   font-weight: 400;
-  font-size: 1.5 rem
+  font-size: 1.5 rem;
+  margin: 0 0 1rem 0;
+
+
 }
+
+
 
 .img-fluid {
   max-width: 100%;
