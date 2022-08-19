@@ -4,40 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
  */
 
-/* COLOR PALETTE:
-#E27D60 dark red/orange
-#85CCCA light blue
-#E8A87C light orange
-#C38D9E purple
-#41B3A3 teal */
-
-
-/* OR
-pastel neon:
-#FF69EB dark pink
-#FF86C8 lighter pink
-#FFA3A5 peach
-#FFBF81 light orange
-#FFBC5E yellow
-
-RETRO COLOR PALETTE:
-
-BROWN: #6F5643
-ORANGE: #CC6B49
-YELLOW: #D2A24C
-CREAM: #ECE6C2
-BLUE/TEAL: #73BDA8
-
-COLORS I LIKE:
-LIGHT PURPLE: #cdb4db
-MORE MATURE PURPLEISH: #b5838d (NAVBAR)
-CREAM: #ECE6C2 (H1)
-
-
-
-
-
-*/
 
 body,
 html {
@@ -99,13 +65,13 @@ header {
 }
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: #ECE6C2;
+  color: #fff6d2;
   font-size: 4rem;
 }
 
-h2, h3 {
+h2 {
   font-family: 'Oswald', sans-serif;
-  color: #ECE6C2;
+  color: #fff6d2;
   font-size: 2rem;
   background-color: (255,188,94);
 }
@@ -166,15 +132,17 @@ a:hover {
 
 @media (max-width: 330px) {
   h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 330px) {
-  h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  #intro-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
   }
 }
 
@@ -189,8 +157,15 @@ a:hover {
   margin-bottom: 30px;
 }
 
-section {
-  padding: 80px 0;
+/* section {
+  padding: .5em 0;
+} */
+
+.section-head {
+  color: #24200d;
+  padding: 1.5rem 0 1rem;
+  letter-spacing: .5rem;
+  font-size: 2.5rem
 }
 
 dl,
