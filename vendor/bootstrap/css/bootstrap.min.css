@@ -95,9 +95,9 @@ body {
     -webkit-tap-highlight-color: transparent
 }
 
-a {
+/* a {
     color: orange;
-}
+} */
 
 
 hr {
@@ -274,9 +274,9 @@ sup {
     text-decoration: underline
 } */
 
-a:hover {
+/* a:hover {
     color: #151515
-}
+} */
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -740,6 +740,8 @@ progress {
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x))
 }
+
+
 
 .row>* {
     -ms-flex-negative: 0;
@@ -4026,8 +4028,8 @@ fieldset:disabled .btn {
 
 .btn-link {
     font-weight: 400;
-    color: #1a1a1a;
-    text-decoration: underline
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .btn-link:hover {
@@ -4400,12 +4402,6 @@ fieldset:disabled .btn {
     color: #919aa1;
     white-space: nowrap
 }
-
-header {
-    padding: 154px 0 100px;
-    background-color: #448ee4;
-}
-
 
 .dropdown-item-text {
     display: block;
@@ -8263,7 +8259,11 @@ header {
 }
 
 .mt-6 {
-    margin-top: 6rem;
+    margin-top: 6rem !important
+}
+
+.mt-10 {
+    margin-top: 10rem !important
 }
 
 .mt-auto {

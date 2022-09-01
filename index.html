@@ -25,7 +25,8 @@
 
 <body id="page-top">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark" id="mainNav">
+  <!-- changed fixed-top to sticky-top to make nav bar disappear after header -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
     <!-- this was the original <nav thing: class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" -->
 
     <div class="container">
@@ -60,12 +61,13 @@
   <!-- <header> -->
   <header
     style="background-image: url('images/header_photo_203kb.jpg'); background-repeat: no-repeat; background-size: cover; background-position: top center;">
-    <div id="intro-text" class="container text-left mt-6">
 
-      <h1 style="text-align: left !important">Hi, I'm Court:</h1>
+    <div id="intro-text" class="container text-left mt-10">
+
+      <h1>Hi, I'm Court:</h1>
       <br>
-      <h2 style="text-align: left !important">web cartographer, data analyst, graphics journalist</h2>
-  
+      <h2>web cartographer, data analyst, graphics journalist</h2>
+
 
     </div>
 
@@ -74,18 +76,129 @@
   <!-- Projects Sections -->
 
   <!-- MAPS -->
+
   <section id="maps" class="bg-light">
     <div class="container">
       <div class="row">
-        <h3 class="text-center section-head">
-          Maps
-        </h3>
+        <h3 class="text-center section-head">Maps</h3>
+      </div>
 
 
 
+      <!-- ROW ONE -->
+      <div class="row">
 
-
+        <!-- MIAMI LST -->
         <div class="col-lg-6 col-sm-6 portfolio-item">
+          <div class="card h-100">
+
+            <div class="card-img-top flourish-embed flourish-map" style="border-bottom: dotted 1px"
+              data-src="visualisation/10682312">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miamiHeat"
+              style="margin-bottom: 1rem">
+              Click to learn more about this map
+            </button>
+          </div>
+        </div>
+
+
+
+        <!-- nested rows start -->
+        <div class="col d-flex align-content-stretch flex-wrap">
+
+          <div class="row">
+            <!-- KY OPIOIDS -->
+            <div class="col-lg-12 col-sm-12 portfolio-item">
+              <div class="card h-100">
+                <img class="card-img-top" src="images/prescriptionbottles.jpg"
+                  alt="Lots of empty prescription bottles" />
+                <div class="card-body">
+                  <h4 class="card-title">
+                    What the Sackler Family Owes Me (And My Fellow Kentuckians)
+                  </h4>
+
+                  <!-- buttons row -->
+                  <div class="row m-3">
+                    <button type="button" class="col-lg-5 col-sm-5 btn btn-primary">
+                      <a href="https://coxco96.github.io/kentucky-sackler-story/" target="_blank"
+                        rel="noopener noreferrer" aria-disabled="true">View story & maps</a>
+                    </button>
+
+                    <div class="col-lg-2 col-sm-2"></div>
+
+                    <button type="button" class="col-lg-5 col-sm-5 btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#kyOpioids">
+                      Learn more
+                    </button>
+                  </div>
+                  <!-- end buttons row -->
+                </div>
+              </div>
+            </div>
+            <!-- end this nested row -->
+          </div>
+
+
+          <div class="row">
+
+            <!-- TRAFFIC LIGHTS -->
+            <div class="col-lg-6 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#trafficLights"><img class="card-img-top"
+                    src="images/simone-hutsch-CQphR2GPlrs-unsplash.jpg"
+                    alt="Three tall, bright colored buildings" /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Cluster Groups: Traffic Lights
+                  </h4>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trafficLights">
+                  Preview map
+                </button>
+
+              </div>
+            </div>
+
+
+
+            <!-- UNEMPLOYMENT -->
+            <div class="col-lg-6 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#unemploymentRates"><img class="card-img-top"
+                    src="images/unemployment-image.jpg" alt="Wallet with $5 bill folded over" /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://coxco96.github.io/unemployment-rates/index.html" target="_blank"
+                      rel="noopener noreferrer">2001-2015 U.S. Unemployment Rates by
+                      County</a>
+                  </h4>
+                  <!-- <p class="card-text">
+                  This map visualizes U.S. unemployment rates from 2001-2015 by giving the user a <b>UI slider bar</b>,
+                  providing contrast between years. This especially highlights the <b>2008 recession</b> and its
+                  economical impact.
+                </p> -->
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+        <!-- nested rows end -->
+
+      </div>
+      <!-- END ROW ONE -->
+
+      <!-- ROW TWO -->
+      <div class="row">
+
+        <!-- NA BREWERIES -->
+        <div class="col-lg-3 col-sm-3 portfolio-item">
           <div class="card h-100">
 
             <a href="#" data-bs-toggle="modal" data-bs-target="#naBreweries"><img class="card-img-top"
@@ -103,31 +216,9 @@
           </div>
         </div>
 
-        <!-- Modal for NA BREWERIES card. -->
-        <div class="modal fade" id="naBreweries" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Preview NORTH AMERICAN BREWERIES</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="us-breweries/na_breweries_8000.png" style="margin-bottom: 10px;" class="mw-100"
-                  alt="Preview of map.">
-                <h4><a href="us-breweries/na_breweries_8000.png" target="_blank" rel="noopener noreferrer">Open
-                    fullscreen</a>.</h4>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
-
-
-
-        <div class="col-lg-6 col-sm-6 col-xs-12 portfolio-item">
+        <!-- KY OPIOIDS -->
+        <div class="col-lg-3 col-sm-3 col-xs-12 portfolio-item">
           <div class="card h-100">
             <a href="#" data-bs-toggle="modal" data-bs-target="#kyOpioid"><img class="card-img-top"
                 src="images/prescriptionbottles.jpg" alt="Lots of empty prescription bottles" /></a>
@@ -147,32 +238,8 @@
           </div>
         </div>
 
-        <!-- Modal for opioid card. -->
-        <div class="modal fade" id="kyOpioid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Preview KENTUCKY OPIOIDS</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="images/kyopioids-screenshot.png" class="mw-100" style="margin-bottom: 10px;"
-                  alt="Preview of map.">
-                <h4>Visit <a href="https://coxco96.github.io/kentucky-sackler-story/" target="_blank"
-                    rel="noopener noreferrer">interactive map</a>.</h4>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-        <div class="col-lg-6 col-sm-6 portfolio-item">
+        <!-- ENERGY -->
+        <div class="col-lg-3 col-sm-3 portfolio-item">
           <div class="card h-100">
             <a href="#" data-bs-toggle="modal" data-bs-target="#powerPlants"><img class="card-img-top"
                 src="images/american-public-power-association-bv2pvCGMtzg-unsplash.jpg" alt="Power Plant" /></a>
@@ -183,7 +250,8 @@
               </h4>
               <p class="card-text">
                 This <b>interactive map</b> shows each hydro, wind, natural gas, and solar energy plant in the U.S. I
-                created <b>popup tooltips</b> to show more information about each plant upon hover (or tap on mobile). I
+                created <b>popup tooltips</b> to show more information about each plant upon hover (or tap on mobile).
+                I
                 used circles <b>proportionate to capacity</b> in order to visually show energy source density. I
                 incorporated <b>design elements</b> that allowed for a visualization of a lot of data without feeling
                 cluttered. This map also includes <b>interactive zoom capability</b>.
@@ -193,32 +261,9 @@
           </div>
         </div>
 
-        <!-- Modal for power plant card. -->
-        <div class="modal fade" id="powerPlants" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Preview PATTERNS OF U.S. ENERGY PRODUCTION</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="images/powerplant-screenshot.png" class="mw-100" style="margin-bottom: 10px;"
-                  alt="Preview of map.">
-                <h4>Visit <a href="https://coxco96.github.io/us-energy-sources/index.html" target="_blank"
-                    rel="noopener noreferrer">interactive map</a>.</h4>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-6 col-sm-6 portfolio-item">
+        <!-- RENT PRICES -->
+        <div class="col-lg-3 col-sm- portfolio-item">
           <div class="card h-100">
-
             <a href="#" data-bs-toggle="modal" data-bs-target="#rentPrices"><img class="card-img-top"
                 src="images/simone-hutsch-CQphR2GPlrs-unsplash.jpg" alt="Three tall, bright colored buildings" /></a>
             <div class="card-body">
@@ -227,8 +272,10 @@
                   rel="noopener noreferrer">U.S. Rent Prices by County</a>
               </h4>
               <p class="card-text">
-                This <b>interactive map</b> shows average rent price by county in the U.S. I used the following packages
-                in <b>Javascript</b> to create this map: <b>Leaflet, jQuery, and Simple Statistics</b>. With this map I
+                This <b>interactive map</b> shows average rent price by county in the U.S. I used the following
+                packages
+                in <b>Javascript</b> to create this map: <b>Leaflet, jQuery, and Simple Statistics</b>. With this map
+                I
                 demonstrate using <b>statistical ckmeans breaks</b> in order to cluster data for <b>optimized
                   visualization.<b>
               </p>
@@ -236,118 +283,38 @@
           </div>
         </div>
 
-        <!-- Modal for U.S. Rent Prices by County card. -->
-        <div class="modal fade" id="rentPrices" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Preview U.S. Rent Prices by County</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="images/countyrent_screenshot.png" style="margin-bottom: 10px;" class="mw-100"
-                  alt="Preview of map.">
-                <h4>Visit <a href="https://coxco96.github.io/county-rent/index.html" target="_blank"
-                    rel="noopener noreferrer">interactive map</a>.</h4>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <!-- END ROW TWO -->
 
 
+    </div>
+  </section>
 
-
-        <div class="row">
-
-
-
-          <div class="col-lg-6 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#unemploymentRates"><img class="card-img-top"
-                  src="images/unemployment-image.jpg" alt="Wallet with $5 bill folded over" /></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://coxco96.github.io/unemployment-rates/index.html">2001-2015 U.S. Unemployment Rates by
-                    County</a>
-                </h4>
-                <p class="card-text">
-                  This map visualizes U.S. unemployment rates from 2001-2015 by giving the user a <b>UI slider bar</b>,
-                  providing contrast between years. This especially highlights the <b>2008 recession</b> and its
-                  economical impact.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for US Unemployment Rates map -->
-          <div class="modal fade" id="unemploymentRates" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Preview U.S. Unemployment Rates</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="images/unemploymentgif.gif" style="margin-bottom: 10px;" class="mw-100"
-                    alt="Preview of map.">
-                  <h4>Visit <a href="https://coxco96.github.io/unemployment-rates/index.html" target="_blank"
-                      rel="noopener noreferrer">interactive map</a>.</h4>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-          <div class="col-lg-6 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#poiDenver"><img class="card-img-top"
-                  src="images/jamie-fenn-XhzdJk1za2k-unsplash.jpg" alt="front of Union Station in Denver, CO" /></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://coxco96.github.io/denver-places-of-interest/index.html" target="_blank"
-                    rel="noopener noreferrer">DENVER, CO: Places of
-                    Interest</a>
-                </h4>
-                <p class="card-text">
-                  This is a map of Denver, Colorado featuring all areas with an after school program, a fire station,
-                  and a restaurant within 1 mile. The map features a <b>UI element</b> that allows the user to <b>toggle
-                    on or off</b> any of the three place categories.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for denver poi card. -->
-          <div class="modal fade" id="poiDenver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Preview DENVER, CO: PLACES OF INTEREST</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="images/denverpoi-screenshot.png" style="margin-bottom: 10px;" class="mw-100"
-                    alt="Preview of map.">
-                  <h4>Visit <a href="https://coxco96.github.io/denver-places-of-interest/index.html" target="_blank"
-                      rel="noopener noreferrer">interactive map</a>.</h4>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Writing  -->
+  <section id="writing" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center section-head">Writing</h3>
+        <ul>
+          <li>
+            <p><a href="https://uknow.uky.edu/campus-news/uk-hdi-staff-lead-conversation-meaning-disability-pride">UK
+                HDI Staff Leading the Conversation on the Meaning of Disability Pride </a></p>
+          </li>
+          <li>
+            <p><a
+                href="https://uknow.uky.edu/research/uk-hdi-resources-families-infants-down-syndrome-formally-recommended-aap">UK
+                HDI Resources for Families of Infants with Down Syndrome Formally Recommended by AAP</a></p>
+          </li>
+          <li>
+            <p><a
+                href="https://uknow.uky.edu/research/kypso-focused-post-school-transition-kentucky-s-students-disabilities">KYPSO
+                focused on post-school transition for Kentucky's students with disabilities</a></p>
+          </li>
+          <li>
+            <p><a href="https://github.com/coxco96/miami-floods">Documentation/walkthrough: Mapping and styling geoTIFFs
+                for the web: how was the Miami-Dade flood risk map made?</a></p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -358,126 +325,417 @@
     <div class="container">
       <div class="row">
         <h3 class="text-center section-head">Charts & Graphs</h3>
-        </div>
-        </div>
-        </section>
+        <p class="text-center">The graphics below have appeared in the Miami Herald and the News Tribune.</p>
 
-
-<!-- Writing  -->
-    <section id="writing" class="bg-light">
-      <div class="container">
+        <!-- row 1 -->
         <div class="row">
-          <h3 class="text-center section-head">Writing</h3>
+
+          <!-- common offenses -->
+          <div class="col-lg-5 col-sm-5 portfolio-item">
+            <div class="card h-100 chart-outer">
+              <div class="card-body chart-inner">
+                <iframe title="Common Offenses" aria-label="Table" id="datawrapper-chart-PVYkd"
+                  src="https://datawrapper.dwcdn.net/PVYkd/3/" scrolling="no" frameborder="0"
+                  style="width: 0; min-width: 100% !important; border: none;" height="606"></iframe>
+                <script type="text/javascript">
+                  ! function () {
+                    "use strict";
+                    window.addEventListener("message", (function (e) {
+                      if (void 0 !== e.data["datawrapper-height"]) {
+                        var t = document.querySelectorAll("iframe");
+                        for (var a in e.data["datawrapper-height"])
+                          for (var r = 0; r < t.length; r++) {
+                            if (t[r].contentWindow === e.source) t[r].style.height = e.data[
+                              "datawrapper-height"][a] + "px"
+                          }
+                      }
+                    }))
+                  }();
+                </script>
+              </div>
+            </div>
+
           </div>
+
+
+
+          <div class="col-lg-7 col-sm-7 portfolio-item">
+            <!-- nested row -->
+            <div class="row">
+              <!-- veteran suicides -->
+              <div class="card h-100 chart-outer">
+                <div class="card-body chart-inner">
+                  <iframe title="Florida Veteran Suicide Rate: 2001-2019" aria-label="Interactive line chart"
+                    id="datawrapper-chart-FCIyL" src="https://datawrapper.dwcdn.net/FCIyL/6/" scrolling="no"
+                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="366"></iframe>
+                  <script type="text/javascript">
+                    ! function () {
+                      "use strict";
+                      window.addEventListener("message", (function (e) {
+                        if (void 0 !== e.data["datawrapper-height"]) {
+                          var t = document.querySelectorAll("iframe");
+                          for (var a in e.data["datawrapper-height"])
+                            for (var r = 0; r < t.length; r++) {
+                              if (t[r].contentWindow === e.source) t[r].style.height = e.data[
+                                "datawrapper-height"][a] + "px"
+                            }
+                        }
+                      }))
+                    }();
+                  </script>
+                </div>
+              </div>
+
+              <!-- drugs seized in fl state prisons -->
+              <div class="card h-100 chart-outer">
+                <div class="card-body chart-inner">
+                  <iframe title="Drugs seized in Florida State Prisons" aria-label="Stacked Bars"
+                    id="datawrapper-chart-Nf3vM" src="https://datawrapper.dwcdn.net/Nf3vM/5/" scrolling="no"
+                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="259"></iframe>
+                  <script type="text/javascript">
+                    ! function () {
+                      "use strict";
+                      window.addEventListener("message", (function (e) {
+                        if (void 0 !== e.data["datawrapper-height"]) {
+                          var t = document.querySelectorAll("iframe");
+                          for (var a in e.data["datawrapper-height"])
+                            for (var r = 0; r < t.length; r++) {
+                              if (t[r].contentWindow === e.source) t[r].style.height = e.data[
+                                "datawrapper-height"][a] + "px"
+                            }
+                        }
+                      }))
+                    }();
+                  </script>
+                </div>
+              </div>
+            </div>
+
+
           </div>
-          </section>
+        </div>
+        <!-- proliferation of problems dot plot -->
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 portfolio-item">
+            <div class="card h-100 chart-outer">
+              <div class="card-body chart-inner">
+                <iframe title="Proliferation of Problems" aria-label="Dot Plot" id="datawrapper-chart-YuhOu"
+                  src="https://datawrapper.dwcdn.net/YuhOu/5/" scrolling="no" frameborder="0"
+                  style="width: 0; min-width: 100% !important; border: none;" height="459"></iframe>
+                <script type="text/javascript">
+                  ! function () {
+                    "use strict";
+                    window.addEventListener("message", (function (e) {
+                      if (void 0 !== e.data["datawrapper-height"]) {
+                        var t = document.querySelectorAll("iframe");
+                        for (var a in e.data["datawrapper-height"])
+                          for (var r = 0; r < t.length; r++) {
+                            if (t[r].contentWindow === e.source) t[r].style.height = e.data[
+                              "datawrapper-height"][a] + "px"
+                          }
+                      }
+                    }))
+                  }();
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <!-- something else -->
+          <div class="col-lg-6 col-sm-6 portfolio-item">
+            <div class="card h-100 chart-outer">
+              <div class="card-body chart-inner">
+                <iframe title="Rate of Contraband seized in Florida Prisons, 2018-2020"
+                  aria-label="Interactive line chart" id="datawrapper-chart-S7M5H"
+                  src="https://datawrapper.dwcdn.net/S7M5H/16/" scrolling="no" frameborder="0"
+                  style="width: 0; min-width: 100% !important; border: none;" height="672"></iframe>
+                <script type="text/javascript">
+                  ! function () {
+                    "use strict";
+                    window.addEventListener("message", (function (e) {
+                      if (void 0 !== e.data["datawrapper-height"]) {
+                        var t = document.querySelectorAll("iframe");
+                        for (var a in e.data["datawrapper-height"])
+                          for (var r = 0; r < t.length; r++) {
+                            if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][
+                              a
+                            ] + "px"
+                          }
+                      }
+                    }))
+                  }();
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+
+
+
+
+
 
 
 
 
   <!-- about me  -->
-    <section id="about" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <h3 class="text-center section-head">About me</h3>
-          </div>
-          <div class="row my-2 clearfix" style="padding:10px 0">
-            <div class="col-md-5">
-              <h3>A few things to know</h3>
-              <ul>
-                <p>As a current graduate student in the University of Kentucky's New Maps Plus Program, I'm learning and growing new skills every week, usually faster than I can update this website.<br>
-                <br>In May 2022, I began a data fellowship with the McClatchy DC Bureau. Much of the visualization work you see above reflects the work I've done in this role. I've grown immensely my skills immensely through this fellowship, and it is my intention to continue into a career in graphics/data journalism.<br>
-                <br>I'm still developing my interests and finding my niches, a process which is both long and invigorating. A few things I know I care deeply about and hope to report on in the future include accessibility barriers to tech, the opioid crisis (see my story on Kentucky above), LGBTQ+ discrimination on Christian college campuses and discrimination against marginalized groups, particularly in healthcare settings.
-                <br> 
-                <br>As my graduate program is fully online and part-time, I'm open for hire. Please contact me via email or Twitter (see below)!
-                </p>
-              </ul>
-            </div>
-            <div class="col-md-2"></div>
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center section-head">About me</h3>
+      </div>
+      <div class="row my-2 clearfix" style="padding:10px 0">
+        <div class="col-md-5">
+          <h3>A few things to know</h3>
+          <ul>
+            <p>As a current graduate student in the University of Kentucky's New Maps Plus Program, I'm learning and
+              growing new skills every week, usually faster than I can update this website.<br>
+              <br>In May 2022, I began a data fellowship with the McClatchy DC Bureau. Much of the visualization work
+              you see above reflects the work I've done in this role. I've grown immensely my skills immensely through
+              this fellowship, and it is my intention to continue into a career in graphics/data journalism.
+              <br>
+              <br>As my graduate program is fully online and part-time, I'm open for hire. Please contact me via email
+              or Twitter (see below)!
+            </p>
+          </ul>
+        </div>
+        <div class="col-md-1"></div>
 
-          <div class="col-md-5">
-            <h3>Analysis/Visualization Tools:</h3>
-            <dl>
+        <div class="col-md-6">
+          <h3>Analysis/Visualization Tools:</h3>
+          <dl>
             <div class="row clearfix">
-              <div class="col-md-5">
-              <dt>I most often use:</dt>
-              <dd>-CSS3/HTML5</dd>
-              <dd>-Datawrapper (including API)</dd>
-              <dd>-Git and Github</dd>
-              <dd>-Google Apps Script</dd>
-              <dd>-Google Sheets</dd>
-              <dd>-JavaScript</dd>
-              <dd>-Leaflet.js</dd>
-              <dd>-Mapbox GL JS</dd>
-              <dd>Mapshaper (command line interface)</dd>
-              <dd>-Node.js</dd>
-              <dd>-QGIS</dd>
+              <div class="col-md-6">
+                <dt>I most often use:</dt>
+                <dd>-CSS3/HTML5</dd>
+                <dd>-Datawrapper (including API)</dd>
+                <dd>-Git and Github</dd>
+                <dd>-Google Apps Script (with Sheets)</dd>
+                <dd>-Google Sheets</dd>
+                <dd>-JavaScript</dd>
+                <dd>-Leaflet.js</dd>
+                <dd>-Mapbox GL JS</dd>
+                <dd>-Mapshaper (command line interface)</dd>
+                <dd>-Node.js</dd>
+                <dd>-QGIS</dd>
               </div>
-              
+
 
               <div class="col-md-6">
-              <dt>I also have experience using:</dt>
-              <dd>-Adobe Illustrator</dd>
-              <dd>-Adobe InDesign</dd>
-              <dd>-Bootstrap</dd>
-              <dd>-d3.js</dd>
-              <dd>-Flourish.studio</dd>
-              <dd>GDAL/OGR (command line interface)</dd>
-              <dd>-Google Earth Engine</dd>
-              <dd>-PostGIS/SQL</dd>
-              <dd>-Python</dd>
-              <dd>-R/RStudio</dd>
-              <dd>-Turf.js</dd>
+                <dt>I also have experience using:</dt>
+                <dd>-Adobe Illustrator</dd>
+                <dd>-Adobe InDesign</dd>
+                <dd>-Bootstrap</dd>
+                <dd>-d3.js</dd>
+                <dd>-Flourish.studio</dd>
+                <dd>-GDAL/OGR (command line interface)</dd>
+                <dd>-Google Earth Engine</dd>
+                <dd>-PostGIS/SQL</dd>
+                <dd>-Python</dd>
+                <dd>-R/RStudio</dd>
+                <dd>-Turf.js</dd>
+              </div>
             </div>
-            </div>
-            </dl>
-          </div>
-
-
+          </dl>
         </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="py-5">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4" style="padding: 0">
+          <h3>Get in touch!</h3>
+          <ul class="list-unstyled">
+            <li class="">
+              <i class="fa fa-twitter mr-2"></i>: <a href="#">@mapcourt</a>
+            </li>
+            <li class="mr-2">
+              <i class="fa fa-github mr-2"></i>: <a href="https://github.com/coxco96" target="_blank"
+                rel="noopener noreferrer">@coxco96</a>
+            </li>
+            <li class="">
+              <i class="fa fa-envelope mr-2"></i>: <span style="color: black;">cgco235@uky.edu</span>
+            </li>
+          </ul>
         </div>
-     </section>
+
+        <div class="col-md-2" style="padding: 0">
+        </div>
+
+        <div class="col-md-6" style="padding: 0">
+          <h3>A couple of notes:</h3>
+          <ul>
+            <li>Background photo
+              created by <a href='https://www.freepik.com/photos/background' target="_blank"
+                rel="noopener noreferrer">freepik</a></li>
+            <li>All other images (not the data visualizations) are sourced from <a href='https://www.unsplash.com'
+                target="_blank" rel="noopener noreferrer">
+                Unsplash</a></li>
+            <li>Website developed and designed by me! </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
 
 
-     <!-- Footer -->
-
-     <footer id="writing" class="py-5">
-
-        <div class="container">
-         
-          <div class="row">
-            <div class="col-md-2" style="padding: 0">
-              <h3>Get in touch!</h3>
-              <ul class="list-unstyled">
-                <li class="">
-                  <i class="fa fa-twitter mr-2"></i>: <a href="#">@mapcourt</a>
-                </li>
-                <li class="mr-2">
-                  <i class="fa fa-github mr-2"></i>: <a href="https://github.com/coxco96" target="_blank"
-                    rel="noopener noreferrer">@coxco96</a>
-                </li>
-                <li class="">
-                  <i class="fa fa-envelope mr-2"></i>: <span style="color: black;">cgco235@uky.edu</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-2" style="padding: 0">
-            </div>
-
-            <div class="col-md-8" style="padding: 0">
-              <h3>A couple of notes:</h3>
-              <ul>
-                <li> <a href='https://www.freepik.com/photos/background' target="_blank" rel="noopener noreferrer">Background photo
-                  created by freepik - www.freepik.com</a></li>
-                <li><a href='https://www.unsplash.com' target="_blank" rel="noopener noreferrer">All other images found on
-                  Unsplash</a></li>
-              </ul>
-            </div>
+  <!-- MODALS -->
+  <section>
+    <!-- Modal: NA BREWERIES -->
+    <div class="modal fade" id="naBreweries" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Preview NORTH AMERICAN BREWERIES</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body">
+            <img src="us-breweries/na_breweries_8000.png" style="margin-bottom: 10px;" class="mw-100"
+              alt="Preview of map.">
+            <h4><a href="us-breweries/na_breweries_8000.png" target="_blank" rel="noopener noreferrer">Open
+                fullscreen</a>.</h4>
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
-     </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: kyOpioids . -->
+    <div class="modal fade" id="kyOpioids" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">What the Sackler Family Owes Me (And My Fellow Kentuckians)
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <p>
+              This project was created in December 2021 as the final project for a course (MAP 673: Interactive Design
+              for Web Mapping).<br><br>
+              Inspired by work in The Pudding and the New York Times, I wanted to explore a scrollytelling library and
+              create a narrative to pair with the maps I had prepared.<br><br>
+              I used scrollama.js for the scrollytelling element. The maps were made with Leaflet.js using data from the
+              Washington Post's ARCOS API.<br><br>
+              I learned how to work in R/RStudio to use the API.
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for US Unemployment Rates map -->
+    <div class="modal fade" id="trafficLights" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Traffic Lights in Austin, TX</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/trafficlights.gif" style="margin-bottom: 10px;" class="mw-100"
+              alt="GIF of a monochrome base map starting with a few groups at high numbers, then zooming in and dispersing into smaller numbers, until reaching the individual point level.">
+            <p>This map was created with Leaflet cluster groups. The color palette comes from Chroma, and the color
+              styles are coded with visual coordination in mind. <br><br>Data for this project was cleaned using Mapshaper and
+              GDAL/ogr on the command line, along with various Node.js packages.<br><br>The basemap was created with OpenStreetTiles and CARTO Voyager tiles. The data is sourced from Austin's Open Data Portal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for miamiHeat. -->
+    <div class="modal fade" id="miamiHeat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reimagining remote sensing data visuals</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <p>In creating the "Where is it hottest in Miami-Dade County?" map, I ran into several challenges and
+              unknowns. While vector temperature data exists
+              for county averages, I needed to use remote satellite data to make this county map on the more granular
+              level.<br><br>Remote sensing data is anything but
+              pretty. It's traditionally difficult to map raster data due to the large file sizes of geoTIFFs.<br><br>
+              For this map, I learned how to use Google Earth Engine to pull in remote sensing data. I used GEE to
+              calculate the average land surface temperature of Miami-Dade County based on each day of summer 2021. I
+              exported the data as a geoTIFF, which I brought into QGIS, where I trimmed the data precision, aggregated
+              similar values, and recasted my raster data as vector data. From here, I exported a geojson file and
+              brought that file into Flourish.<br><br>
+              I chose the color scheme carefully for this map. I did not want to create an alarmist graphic, but I
+              wanted to use colors that were both accessible and could accurately depict the reality of the situation.
+            </p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for U.S. Rent Prices by County card. -->
+    <div class="modal fade" id="rentPrices" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Preview U.S. Rent Prices by County</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/countyrent_screenshot.png" style="margin-bottom: 10px;" class="mw-100"
+              alt="Preview of map.">
+            <h4>Visit <a href="https://coxco96.github.io/county-rent/index.html" target="_blank"
+                rel="noopener noreferrer">interactive map</a>.</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for denver poi card. -->
+    <div class="modal fade" id="poiDenver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Preview DENVER, CO: PLACES OF INTEREST</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/denverpoi-screenshot.png" style="margin-bottom: 10px;" class="mw-100"
+              alt="Preview of map.">
+            <h4>Visit <a href="https://coxco96.github.io/denver-places-of-interest/index.html" target="_blank"
+                rel="noopener noreferrer">interactive map</a>.</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- JQuery JavaScript -->
   <!-- Note: jQuery is no longer needed with Bootstrap 5 and above. -->

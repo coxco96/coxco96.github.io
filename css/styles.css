@@ -13,8 +13,8 @@ html {
 }
 
 .navbar {
-  
-  background-color:#24200d;
+
+  background-color: #24200d;
 }
 
 .nav-link {
@@ -27,7 +27,7 @@ html {
 
 .nav-link:focus,
 .nav-link:hover {
-    color: #b5838d
+  color: #b5838d
 }
 
 .navbar-brand {
@@ -61,8 +61,15 @@ header {
   width: 100%;
   height: 100%;
   text-align: center;
-  
+  padding: 154px 0 100px;
+  background-color: #f0f0f0f3;
 }
+
+.btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #fff6d2;
@@ -73,14 +80,14 @@ h2 {
   font-family: 'Oswald', sans-serif;
   color: #fff6d2;
   font-size: 2rem;
-  background-color: (255,188,94);
+  background-color: (255, 188, 94);
 }
 
 p {
   font-family: 'Oswald', sans-serif;
   color: #24200d;
   font-weight: 400;
-  font-size: 1.5 rem;
+  font-size: 18px;
   margin: 0 0 1rem 0;
 
 
@@ -93,8 +100,10 @@ p {
   height: 20rem
 }
 
-header h1, header h2 {
-  text-shadow: 0 0 2px #212529, 0 0 4px #212529;;
+header h1,
+header h2 {
+  text-shadow: 0 0 2px #212529, 0 0 4px #212529;
+  ;
 }
 
 
@@ -122,12 +131,14 @@ footer {
 
 
 a {
-  color: black
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
-a:hover {
+
+/* a:hover {
   color: #b5838d
-}
+} */
 
 
 
@@ -143,14 +154,16 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 400;
   }
+
   h2 {
     font-size: 1.5rem;
     font-weight: 400;
   }
+
   #intro-text {
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
 }
 
@@ -163,6 +176,15 @@ a:hover {
 
 .portfolio-item {
   margin-bottom: 30px;
+}
+
+.chart-outer {
+  border: solid 2px #24200d;
+}
+
+.chart-inner {
+  padding: 10px;
+  border-bottom: solid 1px #24200da0
 }
 
 /* section {
@@ -179,32 +201,32 @@ a:hover {
 dl,
 ol,
 ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: 'Oswald', sans-serif;
-    color: #24200d;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: 'Oswald', sans-serif;
+  color: #24200d;
 }
 
 ol ol,
 ol ul,
 ul ol,
 ul ul {
-    margin-bottom: 0
+  margin-bottom: 0
 }
 
 dt {
-    font-weight: 700;
-    color: #24200d;
-    text-decoration: underline;
-    font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #24200d;
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
 }
 
 dd {
-    margin-bottom: .5rem;
-    margin-left: 0;
-    color: #24200d;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+  margin-bottom: .5rem;
+  margin-left: 0;
+  color: #24200d;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
 
 .lead {
