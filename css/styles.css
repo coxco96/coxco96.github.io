@@ -164,6 +164,7 @@ a {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 3rem;
+    -webkit-margin-end: 2rem;
     /* margin-top: 1rem; */
   }
 }
