@@ -208,7 +208,11 @@ a {
   color: #24200d;
   padding: 1.5rem 0 1rem;
   letter-spacing: .5rem;
-  font-size: 2.5rem
+  font-size: 2.5rem;
+}
+
+.anchor-scroll {
+  scroll-margin-top: 5rem;
 }
 
 dl,
