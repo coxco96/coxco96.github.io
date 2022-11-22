@@ -200,6 +200,10 @@ a {
   border-bottom: solid 1px #24200da0
 }
 
+.chart-text {
+  padding: 10px;
+}
+
 /* section {
   padding: .5em 0;
 } */

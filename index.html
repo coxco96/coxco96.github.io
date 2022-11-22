@@ -141,23 +141,6 @@
 
           <div class="row">
 
-            <!-- TRAFFIC LIGHTS -->
-            <div class="col-lg-6 col-sm-6 portfolio-item">
-              <div class="card h-100">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#trafficLights"><img class="card-img-top"
-                    src="images/simone-hutsch-CQphR2GPlrs-unsplash.jpg"
-                    alt="Three tall, bright colored buildings" /></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    Cluster Groups: Traffic Lights in Austin, Texas
-                  </h4>
-                </div>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trafficLights">
-                  Preview map
-                </button>
-
-              </div>
-            </div>
             <!-- oxford -->
             <div class="col-lg-6 col-sm-6 portfolio-item">
               <div class="card h-100">
@@ -173,10 +156,25 @@
                 </button>
               </div>
             </div>
+
+            <!-- miamiRedlines -->
+            <div class="col-lg-6 col-sm-6 col-xs-12 portfolio-item">
+              <div class="card h-100">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#miamiRedlines"><img class="card-img-top"
+                    src="images/ocean-sun.jpg" alt="chain fence" /></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Scrollytelling: Miami temperature map by historic HOLC grades
+                  </h4>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miamiRedlines">
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+
           </div>
-
-
-
 
 
 
@@ -224,27 +222,28 @@
           </div>
         </div>
 
-
-
-
-
-
-
-        <!-- deadlyStreet -->
-        <div class="col-lg-3 col-sm-3 col-xs-12 portfolio-item">
+        <!-- TRAFFIC LIGHTS -->
+        <div class="col-lg-3 col-sm-3 portfolio-item">
           <div class="card h-100">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#deadlyStreet"><img class="card-img-top"
-                src="images/chainfence.jpg" alt="Lots of empty prescription bottles" /></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#trafficLights"><img class="card-img-top"
+                src="images/simone-hutsch-CQphR2GPlrs-unsplash.jpg" alt="Three tall, bright colored buildings" /></a>
             <div class="card-body">
               <h4 class="card-title">
-                Deadly Street: Mapping Homicides in Tacoma, WA
+                Cluster Groups: Traffic Lights in Austin, Texas
               </h4>
             </div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deadlyStreet">
-              View map
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trafficLights">
+              Preview map
             </button>
+
           </div>
         </div>
+
+
+
+
+
+
 
 
         <!-- NA BREWERIES -->
@@ -273,6 +272,27 @@
       </div>
       <!-- END ROW TWO -->
 
+      <!-- begin row 3 -->
+      <div class="row">
+
+        <!-- jersey -->
+        <div class="col-lg-3 col-sm-3 portfolio-item">
+          <div class="card h-100">
+
+            <a href="#" data-bs-toggle="modal" data-bs-target="#jersey"><img class="card-img-top"
+                src="images/daniel-vogel-sVothhm7iRI-unsplash.jpg" alt="Brewery with red and silver equipment" /></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                Jersey keeps sordid secrets of the rich and powerful
+              </h4>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jersey">
+              View map
+            </button>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </section>
@@ -284,7 +304,7 @@
     <div class="container">
       <div class="row">
         <h3 class="text-center section-head">Charts & Graphs</h3>
-        <p class="text-center">The graphics below have appeared in the Miami Herald and the News Tribune.</p>
+        <!-- <p class="text-center">The graphics below have appeared in the Miami Herald and the News Tribune.</p> -->
       </div>
 
       <!-- row 0 -->
@@ -296,6 +316,9 @@
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
               </div>
             </div>
+            <div class="chart-text">
+              text!
+            </div>
           </div>
         </div>
 
@@ -305,6 +328,9 @@
               <div class="flourish-embed flourish-chart" data-src="visualisation/11227367">
                 <script src="https://public.flourish.studio/resources/embed.js"></script>
               </div>
+            </div>
+            <div class="chart-text">
+              text!
             </div>
           </div>
         </div>
@@ -337,6 +363,9 @@
                 }();
               </script>
             </div>
+            <div class="chart-text">
+              text!
+            </div>
           </div>
         </div>
 
@@ -363,13 +392,16 @@
                 }();
               </script>
             </div>
+            <div class="chart-text">
+              As seen in <a style='color: navy; text-decoration: underline;' href="https://account.miamiherald.com/paywall/stop?resume=261595317" rel="noopener noreferrer" target="_blank">this</a> Miami Herald story by Julie Brown
+            </div>
           </div>
         </div>
 
       </div>
       <!-- end 1a -->
 
-    
+
 
 
     </div>
@@ -705,37 +737,33 @@
       </div>
     </div>
 
-    <!-- Modal: deadlyStreet -->
-    <div class="modal fade" id="deadlyStreet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal: miamiRedlines -->
+    <div class="modal fade" id="miamiRedlines" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">As seen in the <a
-                style="color: #000; text-decoration: underline"
-                href="https://www.thenewstribune.com/news/local/crime/article264204616.html">News Tribune</a></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="exampleModalLabel">
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>This map was made using Datawrapper. I paid close mind to the color scheme and how it relates to the
-              sensitivity around mapping deaths.</p>
-            <iframe title="Deadly Street" aria-label="Locator maps" id="datawrapper-chart-5qCw7"
-              src="https://datawrapper.dwcdn.net/5qCw7/6/" scrolling="no" frameborder="0"
-              style="width: 0; min-width: 100% !important; border: none;" height="808"></iframe>
-            <script type="text/javascript">
-              ! function () {
-                "use strict";
-                window.addEventListener("message", (function (e) {
-                  if (void 0 !== e.data["datawrapper-height"]) {
-                    var t = document.querySelectorAll("iframe");
-                    for (var a in e.data["datawrapper-height"])
-                      for (var r = 0; r < t.length; r++) {
-                        if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] +
-                          "px"
-                      }
-                  }
-                }))
-              }();
-            </script>
+            <h5>Scrollytelling: Miami Temperature Map by Historic HOLC Grades</h5>
+            <p>Inspired by <a
+                href="https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html"
+                style="color: navy; text-decoration: underline">this</a> New York Times story, I set out to learn how to
+              visualize temperature data by isolating areas of interest on user interaction.</p>
+            <p>This map was made by extracting raster data with Google Earth Engine. I used QGIS to dissolve the data,
+              trim the precision, and convert to vector data. I used QGIS to clip the vector data to each HOLC grade's
+              polygon areas. I then exported each layer as an 8-bit geoTIFF and uploaded the tilesets to Mapbox. I used
+              <a style="color:navy; text-decoration: underline" href="https://github.com/mapbox/storytelling">Mapbox's
+                storytelling documentation</a> to learn how Mapbox GL JS and scrollama.js can work together to create
+              the interactive experience you see in the map.</p>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">
+                <a href="https://coxco96.github.io/miami-redlines/" target="_blank" rel="noopener noreferrer"
+                  aria-disabled="true">View map</a>
+              </button>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -767,6 +795,31 @@
             <button type="button" class="btn btn-primary">
               <a href="https://public.flourish.studio/visualisation/10726754/" target="_blank" rel="noopener noreferrer"
                 aria-disabled="true">View full screen</a>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="jersey" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">As seen in the <a
+                style="color: #000; text-decoration: underline"
+                href="https://www.mcclatchydc.com/news/investigations/article262299427.html">McClatchy D.C. Bureau</a></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="card h-100">
+            <div class="modal-body">
+              <img src="images/jersey.png" style="margin-bottom: 10px;" class="mw-100" alt="Map highlighting the location of the of Jersey, a small island off the northwest coast of France.">
+              This map was made to support <a href="https://www.mcclatchydc.com/news/investigations/article262299427.html" rel="noopener noreferrer" target="_blank" style="color: navy; text-decoration: underline;">this story</a>. It was made as a print layout in QGIS.
+            </div>
+            <button type="button" class="btn btn-primary">
+              <a href="images/jersey.png" target="_blank" rel="noopener noreferrer" aria-disabled="true">View full screen</a>
             </button>
           </div>
           <div class="modal-footer">
