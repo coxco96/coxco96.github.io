@@ -388,8 +388,9 @@
             <div class="chart-text">
               I used the Datawrapper API to keep a "live updated" timestamp on this chart, <a
                 href="https://www.datawrapper.de/_/s1oZg/" style="color: navy; text-decoration: underline"
-                rel="noopener noreferrer" target="_blank">this map</a> and <a href="https://www.datawrapper.de/_/WNk38/"
-                style="color: navy; text-decoration: underline" rel="noopener noreferrer" target="_blank">this map</a>.
+                rel="noopener noreferrer" target="_blank">this map,</a> and <a
+                href="https://www.datawrapper.de/_/WNk38/" style="color: navy; text-decoration: underline"
+                rel="noopener noreferrer" target="_blank">this map</a>.
             </div>
           </div>
         </div>
@@ -442,6 +443,68 @@
                       for (var a in e.data["datawrapper-height"])
                         for (var r = 0; r < t.length; r++) {
                           if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][
+                            a
+                          ] + "px"
+                        }
+                    }
+                  }))
+                }();
+              </script>
+            </div>
+            <div class="chart-text">
+              This range plot, along with all of the housing affordability graphics, use an Apps Script I wrote to
+              scrape
+              public data from Zillow and Realtor.com, send it to a Google sheet, and then use the Datawrapper API to
+              list update timestamps, along with other metadata updates in real time. See the Miami dashboard version in
+              the Miami Herald <a style='color: navy; text-decoration: underline;'
+                href="https://www.miamiherald.com/news/special-reports/affordability-dashboard/"
+                rel="noopener noreferrer" target="_blank">here</a>.
+            </div>
+          </div>
+        </div>
+        <!-- end 1a -->
+
+
+        <!-- overview table -->
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 col-sm-12 portfolio-item">
+          <div class="card h-100 chart-outer">
+            <div class="card-body chart-inner">
+              <iframe title="Fayette County Housing Affordability Overview Table" aria-label="Table" id="datawrapper-chart-1udBQ" src="https://datawrapper.dwcdn.net/1udBQ/12/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="331" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+            </div>
+            <div class="chart-text">
+              See the Miami Herald version (with Miami data) <a style='color: navy; text-decoration: underline;'
+                href="https://www.miamiherald.com/news/special-reports/affordability-dashboard/"
+                rel="noopener noreferrer" target="_blank">here</a>.<br> See my live updating Lexington-Fayette (KY)
+              dashboard <a style='color: navy; text-decoration: underline;' href="https://coxco96.github.io/ky-housing/"
+                rel="noopener noreferrer" target="_blank">here</a>.<br>Check out the source code <a
+                style='color: navy; text-decoration: underline;'
+                href="https://github.com/MiamiHerald/affordability-dashboard" rel="noopener noreferrer"
+                target="_blank">here</a>.
+            </div>
+
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+
+        <!-- 3 bedroom home -->
+        <div class="col-lg-6 col-sm-6 portfolio-item">
+          <div class="card h-100 chart-outer">
+            <div class="card-body chart-inner">
+              <iframe title="Percent Change in Typical Value of Three-Bedroom Home Since January 2020"
+                aria-label="Interactive line chart" id="datawrapper-chart-lvqmm"
+                src="https://datawrapper.dwcdn.net/lvqmm/12/" scrolling="no" frameborder="0"
+                style="width: 0; min-width: 100% !important; border: none;" height="542" data-external="1"></iframe>
+              <script type="text/javascript">
+                ! function () {
+                  "use strict";
+                  window.addEventListener("message", (function (e) {
+                    if (void 0 !== e.data["datawrapper-height"]) {
+                      var t = document.querySelectorAll("iframe");
+                      for (var a in e.data["datawrapper-height"])
+                        for (var r = 0; r < t.length; r++) {
+                          if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][
                             a] + "px"
                         }
                     }
@@ -450,32 +513,51 @@
               </script>
             </div>
             <div class="chart-text">
-              This range plot, along with all of the housing affordability graphics, use an Apps Script I wrote to scrape
-              public data from Zillow and Realtor.com, send it to a Google sheet, and then use the Datawrapper API to
-              list update timestamps, along with other metadata updates in real time. See the Miami dashboard version in the Miami Herald <a
-                style='color: navy; text-decoration: underline;'
+              See the Miami Herald version (with Miami data) <a style='color: navy; text-decoration: underline;'
                 href="https://www.miamiherald.com/news/special-reports/affordability-dashboard/"
-                rel="noopener noreferrer" target="_blank">here</a>.
-            </div>
-          </div>
-        </div>
-        <!-- end 1a -->
-
-        <!-- comparison table -->
-        <div class="col-lg-4 col-sm-4 portfolio-item">
-          <div class="card h-100 chart-outer">
-            <div class="card-body chart-inner">
-              <iframe title="Housing Affordability Overview" aria-label="Table" id="datawrapper-chart-jcQ2y" src="https://datawrapper.dwcdn.net/jcQ2y/117/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="373" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>            </div>
-            <div class="chart-text">
+                rel="noopener noreferrer" target="_blank">here</a>.<br> See my live updating Lexington-Fayette (KY)
+              dashboard <a style='color: navy; text-decoration: underline;' href="https://coxco96.github.io/ky-housing/"
+                rel="noopener noreferrer" target="_blank">here</a>. <br>Check out the source code <a
+                style='color: navy; text-decoration: underline;'
+                href="https://github.com/MiamiHerald/affordability-dashboard" rel="noopener noreferrer"
+                target="_blank">here</a>.
             </div>
           </div>
         </div>
 
-        <div class="col-lg-8 col-sm-8 portfolio-item">
+        <!-- inventory -->
+        <div class="col-lg-6 col-sm-6 portfolio-item">
           <div class="card h-100 chart-outer">
             <div class="card-body chart-inner">
-              <iframe title="Percent Change in Typical Value of Three-Bedroom Home Since January 2020" aria-label="Interactive line chart" id="datawrapper-chart-lvqmm" src="https://datawrapper.dwcdn.net/lvqmm/12/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="542" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>            </div>
+              <iframe title="Number of Homes on the Market on a Typical Day in Fayette County: 2018-2022"
+                aria-label="Interactive line chart" id="datawrapper-chart-j2NLI"
+                src="https://datawrapper.dwcdn.net/j2NLI/10/" scrolling="no" frameborder="0"
+                style="width: 0; min-width: 100% !important; border: none;" height="493" data-external="1"></iframe>
+              <script type="text/javascript">
+                ! function () {
+                  "use strict";
+                  window.addEventListener("message", (function (e) {
+                    if (void 0 !== e.data["datawrapper-height"]) {
+                      var t = document.querySelectorAll("iframe");
+                      for (var a in e.data["datawrapper-height"])
+                        for (var r = 0; r < t.length; r++) {
+                          if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][
+                            a] + "px"
+                        }
+                    }
+                  }))
+                }();
+              </script>
+            </div>
             <div class="chart-text">
+              See the Miami Herald version (with Miami data) <a style='color: navy; text-decoration: underline;'
+                href="https://www.miamiherald.com/news/special-reports/affordability-dashboard/"
+                rel="noopener noreferrer" target="_blank">here</a>.<br> See my live updating Lexington-Fayette (KY)
+              dashboard <a style='color: navy; text-decoration: underline;'
+                href="https://coxco96.github.io/ky-housing/" rel="noopener noreferrer" target="_blank">here</a>.
+              <br>Check out the source code <a style='color: navy; text-decoration: underline;'
+                href="https://github.com/MiamiHerald/affordability-dashboard" rel="noopener noreferrer"
+                target="_blank">here</a>.
             </div>
           </div>
         </div>
@@ -538,7 +620,7 @@
               you see above reflects the work I've done in this role. I've grown my skills immensely through
               this fellowship, and it is my intention to continue into a career in graphics/data journalism.
               <br><br>
-              I'm still finding and developing my specific niche and interests. I'm open to all kinds of work, but I'm
+              I'm still finding and developing my specific niche and interests. I'm open to many kinds of work, but I'm
               finding myself drawn to work related to activism/the amplification of marginalized voices, healthcare
               disparities and entertainment (think Spotify Wrapped).
             </p>
@@ -555,7 +637,7 @@
                 <dd>-CSS3/HTML5</dd>
                 <dd>-Datawrapper (including API)</dd>
                 <dd>-Git and Github</dd>
-                <dd>-Google Apps Script (with Sheets)</dd>
+                <dd>-Google Apps Script</dd>
                 <dd>-Google Sheets</dd>
                 <dd>-JavaScript</dd>
                 <dd>-Leaflet.js</dd>
@@ -567,8 +649,7 @@
 
 
               <div class="col-md-6">
-                <dt>I also have experience using:</dt>
-                <dd>-Adobe Illustrator</dd>
+                <dt>I also have familiarity with:</dt>
                 <dd>-Adobe InDesign</dd>
                 <dd>-Bootstrap</dd>
                 <dd>-d3.js</dd>
@@ -577,7 +658,8 @@
                 <dd>-Google Earth Engine</dd>
                 <dd>-PostGIS/SQL</dd>
                 <dd>-Python</dd>
-                <dd>-R/RStudio</dd>
+                <dd>-matplotlib, pandas, numpy</dd>
+                <dd>-Svelte.js (currently learning)</dd>
                 <dd>-Turf.js</dd>
               </div>
             </div>
