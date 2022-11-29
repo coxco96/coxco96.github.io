@@ -256,6 +256,7 @@ dd {
 #geocoder {
   z-index: 1;
   margin: 10px;
+  border: solid 1px lightgray
 }
 
 .mapboxgl-ctrl-geocoder {

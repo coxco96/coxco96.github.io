@@ -138,10 +138,10 @@
             <div class="col-lg-6 col-sm-6 portfolio-item">
               <div class="card h-100">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#hospital"><img class="card-img-top"
-                    src="images/oxford.jpg" alt="Radcliffe Camera Library at Oxford University" /></a>
+                    src="images/hospital.jpg" alt="children's hospital building" /></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    Geospatial processing: look up your nearest hospital
+                    Geospatial processing tool: look up your nearest hospital
                   </h4>
                 </div>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hospital">
@@ -178,7 +178,7 @@
                     src="images/oxford.jpg" alt="Radcliffe Camera Library at Oxford University" /></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    An Interactive Tour of Oxford University
+                    An Interactive Tour of Oxford University using IIIF Technology
                   </h4>
                 </div>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#oxford">
@@ -235,7 +235,7 @@
                 src="images/flood.jpg" alt="Dark, almost black close up of water" /></a>
             <div class="card-body">
               <h4 class="card-title">
-                Flood Risk Outlooks in Miami-Dade County
+                Bespoke interactive: Flood Risk Outlooks in Miami-Dade County
               </h4>
             </div>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#floodRisk">
@@ -798,14 +798,18 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+            <p>
+            Though not a map, per se, this geospatial processing tool uses Mapbox GL JS and Turf.js to take a user-inputted address and return the nearest hospital and its distance from the search point. Data is sourced from <a href="https://www.usgs.gov/us-board-on-geographic-names/domestic-names?p=gnispq%3A8%3A0" style="color:navy; text-decoration: underline" target="_blank" rel="noopener noreferrer">USGS</a>.<br>
+            Give it a try below by searching a U.S. address.
+          </p>
 
             <div id="geocoder"></div>
             <p id="result"></p>
 
           </div>
           <button type="button" class="btn btn-primary">
-            <a href="https://coxco96.github.io/kentucky-sackler-story/" target="_blank" rel="noopener noreferrer"
-              aria-disabled="true">View story & maps</a>
+            <a href="https://github.com/coxco96/nearest-hospital-lookup" target="_blank" rel="noopener noreferrer"
+              aria-disabled="true">View the source code on Github</a>
           </button>
           <div class="modal-footer">
           </div>
