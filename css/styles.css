@@ -204,10 +204,6 @@ a {
   padding: 10px;
 }
 
-/* section {
-  padding: .5em 0;
-} */
-
 .section-head {
   color: #24200d;
   padding: 1.5rem 0 1rem;
@@ -255,6 +251,20 @@ dd {
   font-weight: 300;
   font-family: 'Oswald', sans-serif;
   color: #24200d;
+}
+
+#geocoder {
+  z-index: 1;
+  margin: 10px;
+}
+
+.mapboxgl-ctrl-geocoder {
+  min-width: 100% !important;
+}
+
+#result {
+  margin-top: 20px;
+  min-height: 20px;
 }
 
 
