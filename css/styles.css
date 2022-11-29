@@ -94,16 +94,25 @@ h2 {
   background-color: (255, 188, 94);
 }
 
-p {
+p, .other-work {
   font-family: 'Oswald', sans-serif;
   color: #24200d;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 0 1rem 0;
-
-
 }
 
+.other-work {
+  padding-left: 1em;
+}
+
+.publication {
+  font-family: 'Oswald', sans-serif;
+  color: #24200d;
+  font-weight: 400;
+  font-size: 22px;
+  /* margin: 0 0 1rem 0; */
+}
 
 
 .img-fluid {

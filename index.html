@@ -46,7 +46,7 @@
               <a class="nav-link" href="#maps">Maps</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#chartsgraphs">Charts & Graphs</a>
+              <a class="nav-link" href="#chartsgraphs">Charts & more</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#writing">Writing Samples</a>
@@ -110,8 +110,6 @@
           </div>
         </div>
 
-
-
         <!-- nested rows start -->
         <div class="col d-flex align-content-stretch flex-wrap">
 
@@ -138,7 +136,7 @@
             <div class="col-lg-6 col-sm-6 portfolio-item">
               <div class="card h-100">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#hospital"><img class="card-img-top"
-                    src="images/hospital.jpg" alt="children's hospital building" /></a>
+                    src="images/hospital.jpg" alt="hospital building" /></a>
                 <div class="card-body">
                   <h4 class="card-title">
                     Geospatial processing tool: look up your nearest hospital
@@ -202,7 +200,7 @@
                 src="images/voted.jpg" alt="chain fence" /></a>
             <div class="card-body">
               <h4 class="card-title">
-                Geocoder UI: Precinct Finder + Miami-Dade Election Results
+                Geocode and FlyTo: Precinct Finder + Miami-Dade Election Results
               </h4>
             </div>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#precinctFinder">
@@ -312,11 +310,47 @@
     <div class="container">
       <div class="row">
         <h3 class="text-center section-head">Charts & Graphs</h3>
-        <!-- <p class="text-center">The graphics below have appeared in the Miami Herald and the News Tribune.</p> -->
       </div>
 
       <!-- row 0 -->
       <div class="row">
+
+        <!-- election results bar -->
+        <div class="col-lg-12 col-sm-12 portfolio-item">
+          <div class="card h-100 chart-outer">
+            <div class="card-body chart-inner">
+              <iframe title="Live Results: how Crist and DeSantis are doing in Miami-Dade County"
+                aria-label="Stacked Bars" id="datawrapper-chart-JURCT" src="https://datawrapper.dwcdn.net/JURCT/308/"
+                scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="113"
+                data-external="1"></iframe>
+              <script type="text/javascript">
+                ! function () {
+                  "use strict";
+                  window.addEventListener("message", (function (e) {
+                    if (void 0 !== e.data["datawrapper-height"]) {
+                      var t = document.querySelectorAll("iframe");
+                      for (var a in e.data["datawrapper-height"])
+                        for (var r = 0; r < t.length; r++) {
+                          if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][
+                            a
+                          ] + "px"
+                        }
+                    }
+                  }))
+                }();
+              </script>
+            </div>
+            <div class="chart-text">
+              I used the Datawrapper API on election night to keep a "live updated" timestamp on this chart as
+              results came in, along with results on <a href="https://www.datawrapper.de/_/s1oZg/"
+                style="color: navy; text-decoration: underline" rel="noopener noreferrer" target="_blank">this map</a>
+              and <a href="https://www.datawrapper.de/_/WNk38/" style="color: navy; text-decoration: underline"
+                rel="noopener noreferrer" target="_blank">this map</a>.
+            </div>
+          </div>
+        </div>
+
+
         <div class="col-lg-6 col-sm-6 portfolio-item">
           <div class="card h-100 chart-outer">
             <div class="card-body chart-inner">
@@ -352,40 +386,7 @@
 
       <!-- start 1a -->
       <div class="row">
-        <!-- proliferation of offenses -->
-        <div class="col-lg-12 col-sm-12 portfolio-item">
-          <div class="card h-100 chart-outer">
-            <div class="card-body chart-inner">
-              <iframe title="Live Results: how Crist and DeSantis are doing in Miami-Dade County"
-                aria-label="Stacked Bars" id="datawrapper-chart-JURCT" src="https://datawrapper.dwcdn.net/JURCT/308/"
-                scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="113"
-                data-external="1"></iframe>
-              <script type="text/javascript">
-                ! function () {
-                  "use strict";
-                  window.addEventListener("message", (function (e) {
-                    if (void 0 !== e.data["datawrapper-height"]) {
-                      var t = document.querySelectorAll("iframe");
-                      for (var a in e.data["datawrapper-height"])
-                        for (var r = 0; r < t.length; r++) {
-                          if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][
-                            a
-                          ] + "px"
-                        }
-                    }
-                  }))
-                }();
-              </script>
-            </div>
-            <div class="chart-text">
-              I used the Datawrapper API to keep a "live updated" timestamp on this chart, <a
-                href="https://www.datawrapper.de/_/s1oZg/" style="color: navy; text-decoration: underline"
-                rel="noopener noreferrer" target="_blank">this map,</a> and <a
-                href="https://www.datawrapper.de/_/WNk38/" style="color: navy; text-decoration: underline"
-                rel="noopener noreferrer" target="_blank">this map</a>.
-            </div>
-          </div>
-        </div>
+
 
         <!-- florida veteran suicide rate -->
         <div class="col-lg-6 col-sm-6 portfolio-item">
@@ -579,38 +580,125 @@
 
 
       </div>
+      <div class="row">
+        <h3 class="text-center section-head">More data/graphics work</h3>
+        <ul class="publication">
+          <li>
+            McClatchy D.C. Bureau
+            <ul class="other-work">
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.mcclatchydc.com/news/investigations/article263757423.html">Florida power company
+                  secretly bankrolled a news website</a>
+                <ul class="other-work">
+                  <li>Though I do not have graphics in this piece, my role was in data collection and analysis. I
+                    assisted the reporter, Sarah Blaskey, by writing a web scraper with Google Apps Script for the
+                    referenced news site, The Capitolist, scraping all article titles, links, authors, and publish dates
+                    on its server. I then wrote a Python script to analyze the most commonly found words in the
+                    headlines. I used Google Sheets to explore trends in the data such as trends in frequency of
+                    publication.</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+          <li>
+            Miami Herald
+            <ul class="other-work">
+              <li>
+                <a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.miamiherald.com/news/politics-government/state-politics/article263757423.html">Florida
+                  power company secretly bankrolled a news website</a> - also published in D.C. Bureau
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.miamiherald.com/news/politics-government/article265853596.html">Furor erupts over
+                  sending migrants to Massachusetts</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.miamiherald.com/news/special-reports/florida-prisons/article264165166.html">How
+                  visitor ban affected drug smuggling in Florida prisons</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.miamiherald.com/news/health-care/article261595317.html">New therapies for the
+                  invisible wounds of war</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.miamiherald.com/news/weather/hurricane/article266621691.html">See the areas ravaged
+                  by Hurricane Ian and read the stories from the ground</a>
+                <ul class="other-work">
+                  <li>This map links out to other stories published by the Herald about Hurricane Ian, specific to their
+                    geographic area of interest within Florida.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+
+          <li>Tacoma News Tribute
+            <ul class="other-work">
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.thenewstribune.com/news/local/crime/article264204616.html">Crime on Hosmer Street:
+                  Is it Tacoma's deadliest Corridor?</a></li>
+
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://www.thenewstribune.com/news/local/article264814589.html">Hosmer St. motels converting to
+                  low-income housing in Tacoma</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
   </section>
 
-  <!-- Writing  -->
-  <section id="writing" class="bg-light anchor-scroll">
+  <section id="writing" class="anchor-scroll bg-light">
     <div class="container">
       <div class="row">
-        <h3 class="text-center section-head">Writing Samples</h3>
-        <ul>
-          <li>
-            <p><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
-                href="https://uknow.uky.edu/campus-news/uk-hdi-staff-lead-conversation-meaning-disability-pride">UK
-                HDI Staff Leading the Conversation on the Meaning of Disability Pride </a></p>
-          </li>
-          <li>
-            <p><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
-                href="https://uknow.uky.edu/research/uk-hdi-resources-families-infants-down-syndrome-formally-recommended-aap">UK
-                HDI Resources for Families of Infants with Down Syndrome Formally Recommended by AAP</a></p>
-          </li>
-          <li>
-            <p><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
-                href="https://uknow.uky.edu/research/kypso-focused-post-school-transition-kentucky-s-students-disabilities">KYPSO
-                focused on post-school transition for Kentucky's students with disabilities</a></p>
-          </li>
-          <li>
-            <p><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
-                href="https://github.com/coxco96/miami-floods">Documentation/walkthrough: Mapping and styling geoTIFFs
-                for the web: how was the Miami-Dade flood risk map made?</a></p>
+        <h3 class="text-center section-head" id="writing">Writing Samples</h3>
+      </div>
+      <div class="row">
+        <ul class="publication">
+          <li id="writing" class="anchor-scroll">Writing Samples
+            <ul class="other-work">
+
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://uknow.uky.edu/research/uk-hdi-resources-families-infants-down-syndrome-formally-recommended-aap">HDI
+                  Resources for Families of Infants with Down Syndrome Formally Recommended by AAP </a></li>
+
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://uknow.uky.edu/research/hdi-host-prenatal-disability-education-summit">HDI to Host
+                  Prenatal Disability Education Summit </a></li>
+
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://hdi.uky.edu/news/kentucky-deafblind-project-connects-youth-from-across-the-state-for-a-week-of-hands-on-education-and-fun?doing_wp_cron=1666287008.0616950988769531250000">
+                  Kentucky DeafBlind Project Connects Youth from Across the State for a Week of Hands-On Education and
+                  Fun</a></li>
+
+
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://uknow.uky.edu/campus-news/uk-hdi-staff-lead-conversation-meaning-disability-pride">UK
+                  HDI Staff Leading the Conversation on the Meaning of Disability Pride</a></li>
+
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://uknow.uky.edu/research/kypso-focused-post-school-transition-kentucky-s-students-disabilities">KYPSO
+                  focused on post-school transition for Kentucky's students with disabilities</a></li>
+            </ul>
+
+          <li>Github - Code Walkthrough
+            <ul class="other-work">
+              <li><a target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration: underline"
+                  href="https://github.com/coxco96/miami-floods">Documentation/walkthrough: Mapping and styling
+                  geoTIFFs
+                  for the web: how was the Miami-Dade flood risk map made?</a></li>
           </li>
         </ul>
       </div>
     </div>
   </section>
+
+
 
   <!-- about me  -->
   <section id="about" class="bg-light anchor-scroll">
@@ -793,15 +881,18 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Geospatial processing: look up your nearest hospital
+            <h5 class="modal-title" id="exampleModalLabel">Geospatial processing:<br>look up your nearest hospital
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p>
-            Though not a map, per se, this geospatial processing tool uses Mapbox GL JS and Turf.js to take a user-inputted address and return the nearest hospital and its distance from the search point. Data is sourced from <a href="https://www.usgs.gov/us-board-on-geographic-names/domestic-names?p=gnispq%3A8%3A0" style="color:navy; text-decoration: underline" target="_blank" rel="noopener noreferrer">USGS</a>.<br>
-            Give it a try below by searching a U.S. address.
-          </p>
+              This mapless geospatial processing tool uses Mapbox GL JS and Turf.js to take a
+              user-inputted address and return the nearest hospital and its distance from the search point. Data is
+              sourced from <a href="https://www.usgs.gov/us-board-on-geographic-names/domestic-names?p=gnispq%3A8%3A0"
+                style="color:navy; text-decoration: underline" target="_blank" rel="noopener noreferrer">USGS</a>.<br><br>
+              Give it a try below by searching a U.S. address.
+            </p>
 
             <div id="geocoder"></div>
             <p id="result"></p>
@@ -958,7 +1049,8 @@
           <div class="card h-100">
             <div class="modal-body">
               This map uses Mapbox GL JS with geocoder plugin to match a searched address within the Miami-Dade County
-              bounding box to its precinct number. It then displays election results and demographic information.
+              bounding box to its precinct number. The user can also click on a precicnt rather than searching. It then
+              displays election results and demographic information.
               The geolocator only accepts addresses within its bounding box.<br><br>
               If you (like me) aren't too familiar with the Miami area, use this address to give it a try: <em>Sunset
                 Drive, Miami Beach, Florida 33140, United States</em>.
@@ -1081,9 +1173,8 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js">
   </script>
   <link rel="stylesheet"
-      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
-      type="text/css">
-      <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+  <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
   <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
   <script src="hospital-lookup/app.js"></script>
 
