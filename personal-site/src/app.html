@@ -6,6 +6,9 @@
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 	<meta name="viewport" content="width=device-width" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 	%sveltekit.head%
 
 	<style>
@@ -17,6 +20,14 @@
 		nav a.active {
 			text-decoration-thickness: .1rem;
 			font-weight: 550;
+		}
+
+		nav a:not(active) {
+			text-decoration-thickness: .01rem;
+		}
+
+		* {
+			font-family: 'Questrial', sans-serif;
 		}
 	 </style>
 </head>

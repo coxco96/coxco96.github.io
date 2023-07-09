@@ -27,5 +27,10 @@
 </table>
 
 
-
+<style>
+    td {
+        text-align: left;
+        padding: 3px;
+    }
+</style>
  
