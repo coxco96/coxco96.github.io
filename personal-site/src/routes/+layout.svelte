@@ -4,7 +4,6 @@
 
 
 
-
 <div class="container-fluid text-center py-3">
     <div class="container">
         <nav>
@@ -25,33 +24,5 @@
     <slot />
 </div>
 
-<style>
-    a.active {
-        text-decoration-thickness: .1rem;
-        font-weight: 550;
-    }
-</style>
-
-<!-- 
-<div class='row'>
-    <div class='col-9'>col9</div>
-    <div class='col-3'>col3</div>
-</div>
-
-<nav>
-    <a href='/'>Home</a>
-    <a href='/portfolio'>Portfolio</a>
-    <a href='/blog'>Blog</a>
-</nav>
-
-<div id='content'>
-    <slot></slot>
-</div>
 
 
-<style>
-
-    :global(h1) {
-        font-family: 'Courier New', Courier, monospace;
-    }
-</style> -->

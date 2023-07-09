@@ -1,3 +1,3 @@
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>hi, I'm court</h1>
+<p>this website is under construction</p>
